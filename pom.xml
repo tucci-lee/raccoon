@@ -7,7 +7,7 @@
     <groupId>com.tuccicode</groupId>
     <artifactId>raccoon</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
 
     <name>${project.artifactId}:${project.version}</name>
     <description>Java Develop common packages</description>
