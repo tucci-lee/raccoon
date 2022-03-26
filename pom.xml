@@ -7,7 +7,7 @@
     <groupId>com.tuccicode</groupId>
     <artifactId>raccoon</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
 
     <name>${project.artifactId}:${project.version}</name>
     <description>Java Develop common packages</description>
@@ -47,6 +47,7 @@
 
     <properties>
         <slf4j.version>1.7.33</slf4j.version>
+        <spring-data-redis.version>2.3.6.RELEASE</spring-data-redis.version>
     </properties>
 
     <dependencyManagement>
@@ -55,6 +56,11 @@
                 <groupId>org.slf4j</groupId>
                 <artifactId>slf4j-api</artifactId>
                 <version>${slf4j.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-redis</artifactId>
+                <version>${spring-data-redis.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

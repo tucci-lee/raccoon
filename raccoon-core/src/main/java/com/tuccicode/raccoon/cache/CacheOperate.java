@@ -15,6 +15,16 @@ public interface CacheOperate {
     <T> void set(String key, T value);
 
     /**
+     * 添加缓存，有过期时间
+     *
+     * @param key     缓存key
+     * @param value   缓存value
+     * @param timeout 过期时间
+     * @param unit    过期时间单位
+     */
+    <T> void set(String key, T value, long timeout, TimeUnit unit);
+
+    /**
      * 获取缓存
      *
      * @param key 缓存key
