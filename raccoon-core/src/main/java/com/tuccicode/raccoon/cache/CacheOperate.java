@@ -39,4 +39,11 @@ public interface CacheOperate {
      */
     void delete(String key);
 
+    /**
+     * 获取过期时间
+     *
+     * @param key 缓存key
+     * @return 过期时间/秒
+     */
+    long getExpire(String key);
 }

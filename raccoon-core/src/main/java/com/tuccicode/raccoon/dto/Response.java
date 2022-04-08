@@ -1,5 +1,7 @@
 package com.tuccicode.raccoon.dto;
 
+import com.tuccicode.raccoon.exception.BizCode;
+
 /**
  * @author tucci.lee
  */
@@ -56,11 +58,15 @@ public class Response extends DTO {
         return response;
     }
 
-    public static Response failure(int code, String message) {
+    public static Response fail(int code, String message) {
         Response response = new Response();
         response.setStatus(FAILURE);
         response.setCode(code);
         response.setMessage(message);
         return response;
+    }
+
+    public static Response fail(BizCode bizCode) {
+        return fail(bizCode.getCode(), bizCode.getMessage());
     }
 }

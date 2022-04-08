@@ -16,7 +16,7 @@ public abstract class Assert {
         }
     }
 
-    public static void isNull(Object obj, ErrorCode errorCode) {
+    public static void isNull(Object obj, BizCode errorCode) {
         isNull(obj, errorCode.getCode(), errorCode.getMessage());
     }
 
@@ -26,7 +26,7 @@ public abstract class Assert {
         }
     }
 
-    public static void notNull(Object obj, ErrorCode errorCode) {
+    public static void notNull(Object obj, BizCode errorCode) {
         notNull(obj, errorCode.getCode(), errorCode.getMessage());
     }
 
@@ -36,7 +36,7 @@ public abstract class Assert {
         }
     }
 
-    public static void isTrue(boolean expression, ErrorCode errorCode) {
+    public static void isTrue(boolean expression, BizCode errorCode) {
         isTrue(expression, errorCode.getCode(), errorCode.getMessage());
     }
 
@@ -46,7 +46,7 @@ public abstract class Assert {
         }
     }
 
-    public static void notEmpty(CharSequence obj, ErrorCode errorCode) {
+    public static void notEmpty(CharSequence obj, BizCode errorCode) {
         notEmpty(obj, errorCode.getCode(), errorCode.getMessage());
     }
 
@@ -56,7 +56,7 @@ public abstract class Assert {
         }
     }
 
-    public static void notEmpty(Collection<?> collection, ErrorCode errorCode) {
+    public static void notEmpty(Collection<?> collection, BizCode errorCode) {
         notEmpty(collection, errorCode.getCode(), errorCode.getMessage());
     }
 
@@ -66,7 +66,7 @@ public abstract class Assert {
         }
     }
 
-    public static void notEmpty(Map<?, ?> map, ErrorCode errorCode) {
+    public static void notEmpty(Map<?, ?> map, BizCode errorCode) {
         notEmpty(map, errorCode.getCode(), errorCode.getMessage());
     }
 
@@ -76,7 +76,7 @@ public abstract class Assert {
         }
     }
 
-    public static void notEmpty(Object[] array, ErrorCode errorCode) {
+    public static void notEmpty(Object[] array, BizCode errorCode) {
         notEmpty(array, errorCode.getCode(), errorCode.getMessage());
     }
 }

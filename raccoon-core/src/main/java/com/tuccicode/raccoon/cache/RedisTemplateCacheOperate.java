@@ -34,4 +34,9 @@ public class RedisTemplateCacheOperate implements CacheOperate {
     public void delete(String key) {
         redisTemplate.delete(key);
     }
+
+    @Override
+    public long getExpire(String key) {
+        return redisTemplate.getExpire(key);
+    }
 }
